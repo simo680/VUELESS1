@@ -1,8 +1,21 @@
 <template>
-  <h2 class="content">ContentList</h2>
+  <h2 class="content">Content Item</h2>
+  <img v-if="num2 % 10 === 0" :src="srcImage" alt="smile face" />
+  <div v-if="number % 2 === 0">Hello world!</div>
+  <div v-else>No hello!</div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      num2: 10,
+      number: Math.floor(Math.random() * (50 - 1) + 1),
+      srcImage: 'https://freepngimg.com/thumb/happy/144618-emoji-happy-free-clipart-hd.png'
+    }
+  }
+}
+</script>
 
 <style>
 .content {

@@ -1,17 +1,17 @@
 <template>
-  <Block></Block>
-  <ContentList></ContentList>
+ <Cycle></Cycle>
 </template>
 
 <script>
 import Block from './Block.vue'
 import ContentList from './ContestList.vue'
-
+import Cycle from './Cycle.vue'
 
 export default {
-  
   components: {
-    Block, ContentList
+    Block,
+    ContentList,
+    Cycle
   }
 }
 </script>
